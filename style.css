@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&italic@400;800&display=swap');
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  background-color: var(--Off-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--White);
+  border-radius: 20px;
+  border-bottom-right-radius: 170px;
+  padding: 2rem;
+}
+
+.box-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: var(--Smokey-grey);
+  text-transform: uppercase;
+}
+
+.that-input {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 120px;
+  margin: 0.5rem;
+}
+
+.that-input label {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.that-input input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 1px solid var(--Light-grey);
+  color: var(--Off-black);
+}
+
+.that-input input:focus {
+  outline: none;
+  border: 1px solid var(--Purple);
+}
+
+.error {
+  color: var(--Light-red);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  margin-top: 0.5rem;
+}
+
+.box-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--Light-grey);
+}
+
+button {
+  background-color: var(--Purple);
+  padding: 1rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--Off-black);
+}
+
+.box-result {
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: -1rem;
+  color: var(--Off-black);
+}
+
+span {
+  color: var(--Purple);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+    border-bottom-right-radius: 100px;
+  }
+
+  .box-inputs {
+    width: 100%;
+  }
+
+  .that-input {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .error {
+    width: 100%;
+  }
+
+  .box-button {
+    margin-top: 1rem;
+  }
+
+  .sec-line {
+    width: 100%;
+    border: 1px solid var(--Light-grey);
+  }
+
+  .box-result {
+    font-size: 2.5rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
